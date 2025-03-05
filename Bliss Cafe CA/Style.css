@@ -1,0 +1,237 @@
+﻿
+body {
+    background-color: bisque;
+    border-radius:10px;
+    font-family:Arial, sans-serif;
+    word-spacing:2px;
+    letter-spacing:0.5px;
+    
+}
+/*This is Applied to all pages*/
+section {
+    padding: 3em;
+    margin: 20px auto;
+    background-color: white;
+    max-width: 800px;
+    border-radius: 10px;
+}
+/*Header*/
+header {
+    background-image: url('Image/pattern.png');
+    height: 50px;
+    padding-top:20px;
+    padding-bottom:190px;
+    padding-left:50px;
+    border-radius:10px;
+}
+
+.headtxt {
+    font-family: 'Comic Sans MS';
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: #484b40;
+    width:500px;
+    border-radius:15px;
+}
+/* Footer */
+footer {
+    background-color: #caae49;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    border-radius: 10px;
+}
+
+footer .map{
+    float:right;
+   padding-top:10px;
+    width:500px;
+    margin-left:15px;
+}
+footer h1{
+    font-size:large;
+}
+footer .footerlogo {
+    width: 200px;
+    height:300px;
+    float: left;
+}
+
+.foooter {
+    color: white;
+    text-decoration-line: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: larger;
+}
+
+    .foooter:hover {
+        transform: translateY(-5px);
+        transition: 0.3s ease-in-out;
+    }
+
+
+    /*Navigation Bar*/
+nav {
+    overflow: hidden;
+    background-color: #caae49;
+    padding:0px;
+    border-radius:10px;
+    height:150px;
+}
+nav .logo{
+    width:200px;
+    height:200px;
+    float:left;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    overflow: hidden;
+    justify-content:left;
+    margin: 0;
+    padding: 0;
+}
+nav li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 26px;
+    padding-top:60px;
+    font-size: x-large;
+    font-weight:bolder;
+}
+    nav li a:hover {
+        transform: translateY(-5px);
+        transition: 0.3s ease-in-out;
+    }
+
+
+.link {
+    color: white;
+    text-decoration-line: none;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.Columns {
+    max-width: 200px;
+}
+.Action {
+    max-width: 800px;
+    box-shadow: 0 1 8 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 40px auto;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Image{
+    width:150%;
+    height:30%;
+    border-radius:5px;
+}
+.Image1 {
+    width: 130%;
+    height: 30%;
+    border-radius: 5px;
+    float:left;
+}
+.Action3 {
+    padding: 3em;
+    margin: 20px auto;
+    max-width: 200px;
+    box-shadow: 0 1 8 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FAQ */
+.faq-item h3 {
+    background-color: #FFC107;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+    .faq-item h3:hover {
+        background-color: #E6A800;
+    }
+
+.faq-answer {
+    background-color: #FFF8E1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Staff */
+.staff-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+.staff-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.staff-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+    padding: 20px;
+}
+
+.staff-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.staff-role {
+    font-size: 1rem;
+    color: #4CAF50;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.staff-bio {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+}
+
+
+

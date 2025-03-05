@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Bliss_Cafe_CA.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="Style.css" />
+
+    <title>
+        <asp:ContentPlaceHolder ID="PageTitle" runat="server">Bliss Cafe</asp:ContentPlaceHolder>
+    </title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $(".faq-question").on("click", function() {
+            $(this).next(".faq-answer").slideToggle();
+        });
+    });
+    </script>
+
+
+    <!-- Dont touch -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Dont touch -->
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 400px;
+        }
+    </style>
+
+</head>
+<body>
+    <form class="form" id="form1" runat="server">
+        <div>
+            <!-- Heading -->
+            <header>
+                <p class=headtxt>Bliss Cafe</p>
+            </header>
+
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <img src="Image/logo.png" class="logo" style="height: 150px; width: 173px"/>
+                    <li><a href="Home.aspx"> Home </a></li>
+                    <li><a href="Menu.aspx"> Menu </a></li>
+                    <li><a href="Staff.aspx"> Staff </a></li>
+                    <li><a href="FAQ.aspx"> FAQ </a></li>
+                    <li><a href="OrderForm.aspx"> Order </a></li>
+                    <li><a href="OrderSummary.aspx"> Summary </a></li>
+                </ul>
+            </nav>
+            
+            <!-- Dont touch -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- Dont touch -->
+
+
+            <!-- Footer -->
+            <footer>
+                <img src="Image/logo.png" class="footerlogo" style="height: 199px"/>
+                     <div class="map">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093075!2d-122.41941568468189!3d37.77492927975951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c2e1fcd13%3A0xc6d9d2c7f9e3f6b1!2sPetmark%20Store!5e0!3m2!1sen!2sus!4v1617043843978!5m2!1sen!2sus" allowfullscreen="" loading="lazy" class="auto-style1"></iframe>
+                     </div>
+
+                <h1>&nbsp;</h1>
+                <h1 style="font-weight:bolder; font-size:larger;">Copyright 2024 &copy; Brithway Julius</h1>
+
+                <!-- Footer Links -->
+                 <h3><a href="Home.aspx" class="foooter"> Home&nbsp; &nbsp;&nbsp; </a>
+     <a href="Menu.aspx" class="foooter"> Menu&nbsp; &nbsp;&nbsp; </a>
+     <a href="Staff.aspx" class="foooter"> Staff&nbsp;&nbsp; </a>&nbsp;&nbsp;&nbsp;
+     <a href="FAQ.aspx" class="foooter"> FAQ&nbsp; </a>&nbsp;&nbsp;
+     <a href="OrderForm.aspx" class="foooter"> Order </a>&nbsp;&nbsp;&nbsp;
+     <a href="OrderSummary.aspx" class="foooter"> Summary </a>
+                 </h3>
+                <h4>
+                    <a href="https://facebook.com" target="_blank"><img src="Icons/facebook.png" class="link" alt="Facebook" style="width: 30px; margin-right: 10px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://instagram.com" target="_blank"><img src="Icons/instagram.png" class="link" alt="Instagram" style="width: 30px; margin-right: 10px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://wa.me/" target="_blank"><img src="Icons/whatsapp.png" alt="Whatsapp" style="width: 30px; "></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.lemonjelly.ie/" target="_blank"><img src="Icons/link.png" class="link" alt="LemmonJelly" style="width:30px; margin-right:10px;"</a>
+                </h4>
+            </footer>
+        </div>
+    </form>
+    
+</body>
+</html>
